@@ -19,10 +19,11 @@ Link : https://www.kaggle.com/datasets/karakaggle/kaggle-cat-vs-dog-dataset
 
 run train.py and test if it works succfully
 
-## 4- dockerize and test the docker image
+** train.py to train pytorch CNN model in image classification task
+
+## 4- dockerize and test the docker image if it works
 
 docker build -t cats_vs_dogs .
-
 
 docker run -di --name t_cont -v "E:\github\aws_sagemaker_catsVSdogs\data\input_data:/opt/ml/input/data" -v "E:\github\aws_sagemaker_catsVSdogs\outs:/opt/ml/output" -v "E:\github\aws_sagemaker_catsVSdogs\hyperparams.json:/opt/ml/input/config/hyperparams.json" -e INPUT_DATA_PATH="/opt/ml/input/data" -e OUTPUT_DATA_PATH="/opt/ml/output" -e HYPERPARAMS_PATH="/opt/ml/input/config/hyperparams.json" -e RUN_ID="1" cats_vs_dogs
 
@@ -51,3 +52,6 @@ BUCKET
 
 ## 7- edit create_sage_maker_training_job.py file and run it
 this file using boto3 python aws sdk to create sagemaker training job
+
+
+## 8- after training u will see artifacts in outs folder inside the bucket
