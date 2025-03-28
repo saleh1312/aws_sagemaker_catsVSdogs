@@ -41,9 +41,9 @@ with open(hyperparams_file, "w") as f:
     json.dump(hyperparams, f, indent=4)
 
 # Hyperparameters
-learning_rate = hyperparams["learning_rate"]
-batch_size = hyperparams["batch_size"]
-num_epochs = hyperparams["num_epochs"]
+learning_rate = float(hyperparams["learning_rate"])
+batch_size = int(hyperparams["batch_size"])
+num_epochs = int(hyperparams["num_epochs"])
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 

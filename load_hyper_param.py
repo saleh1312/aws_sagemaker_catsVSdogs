@@ -19,8 +19,8 @@ with open(hyper_params_dir, "r") as file:
 print(hyperparams)
 
 # Access specific hyperparameters
-learning_rate = hyperparams["learning_rate"]
-batch_size = hyperparams["batch_size"]
-num_epochs = hyperparams["num_epochs"]
+learning_rate = float(hyperparams["learning_rate"])
+batch_size = int(hyperparams["batch_size"])
+num_epochs = int(hyperparams["num_epochs"])
 
 print(f"Learning Rate: {learning_rate}, Batch Size: {batch_size}, Epochs: {num_epochs}")
