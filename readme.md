@@ -26,6 +26,8 @@ docker exec -it t_cont bash
 
 ## 5- push to ECR repository
 
+5_1 - create ecr repo in aws and push to it
+
 ## 6- upload the sampled dataset to s3 bucket
 
 ## 7- edit create_sage_maker_training_job.py file and run it
