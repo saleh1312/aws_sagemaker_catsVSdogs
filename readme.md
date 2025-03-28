@@ -1,7 +1,11 @@
 ##
 i followed the official asw sage maker docs to build this project :
+
 https://docs.aws.amazon.com/sagemaker/latest/dg/your-algorithms-training-algo.html
 
+
+this is very very helpful article in medium :
+https://medium.com/@smertatli/aws-sagemaker-is-one-of-the-most-advanced-machine-learning-services-in-the-cloud-world-46ff67d45c0
 
 ## 1- downloading dataset
 
