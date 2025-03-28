@@ -10,13 +10,13 @@ sagemaker_client = boto3.client(
 # aws params
 training_job_name = 'salo7ty-'+time.strftime('%Y-%m-%d-%H-%M-%S')
 
-BUCKET_NAME = "sgdatatestsalo7ty"
+BUCKET_NAME = "[YOUR_BUCKET_NAME]"
 input_s3_uri = f's3://{BUCKET_NAME}/dataset/'
 output_bucket = f's3://{BUCKET_NAME}/outs/'
 train_mounted_folder = "train"
 
-ecr_container_url = '590183990528.dkr.ecr.us-east-1.amazonaws.com/cats_vs_dogs:latest'
-sagemaker_role = 'arn:aws:iam::590183990528:role/service-role/AmazonSageMaker-ExecutionRole-20241025T201675'
+ecr_container_url = '[YOUR_AWS_ACCOUNT_ID].dkr.ecr.us-east-1.amazonaws.com/cats_vs_dogs:latest'
+sagemaker_role = 'arn:aws:iam::[YOUR_AWS_ACCOUNT_ID]:role/service-role/AmazonSageMaker-ExecutionRole-20241025T201675'
 
 instance_type = 'ml.m5.large'
 instance_count = 1

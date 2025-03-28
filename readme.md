@@ -50,3 +50,4 @@ BUCKET
 - outs ( to catch the sagemaker training job artifacts )
 
 ## 7- edit create_sage_maker_training_job.py file and run it
+this file using boto3 python aws sdk to create sagemaker training job
