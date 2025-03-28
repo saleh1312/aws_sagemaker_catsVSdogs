@@ -50,7 +50,7 @@ _ = sagemaker_client.create_training_job(
     HyperParameters={
         "learning_rate": "0.001",
         "batch_size": "32",
-        "num_epochs": "5"
+        "num_epochs": "100"
     },
 
     # a IAM role with proper permissions so that sagemaker can run
